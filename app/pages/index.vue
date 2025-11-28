@@ -67,11 +67,11 @@
       <!-- Right Section - Image -->
       <div class="right-section">
         <div class="profile-image">
-          <img src="/assets/images/logo/my-profile.jpg" alt="Lethean Seourn" />
+          <img src="/assets/images/logo/profile.png" alt="Lethean Seourn" />
         </div>
-        <button class="arrow-btn" aria-label="Next">
+        <!-- <button class="arrow-btn" aria-label="Next">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </button>
+        </button> -->
       </div>
     </div>
 
@@ -336,8 +336,9 @@ onUnmounted(() => {
 .profile-image {
   width: 100%;
   max-width: 350px;
-  height: 450px;
+  height: 600px;
   overflow: hidden;
+  margin-right: 2rem;
 }
 
 .profile-image img {
