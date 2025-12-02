@@ -25,13 +25,13 @@
         <!-- Rest of the template remains unchanged -->
         <div class="sidebar-content">
             <!-- Search -->
-            <div class="search-box" :class="{ 'search-collapsed': !expanded }">
+            <!-- <div class="search-box" :class="{ 'search-collapsed': !expanded }">
                 <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
                 <input v-if="expanded" type="text" placeholder="Search" class="search-input" />
-            </div>
+            </div> -->
 
             <!-- Main Nav -->
             <nav class="nav-section">
@@ -86,8 +86,14 @@
                 <div class="user-profile">
                     <img src="/assets/images/logo/my-profile.jpg" alt="User" class="avatar" />
                     <div v-if="expanded" class="user-info">
-                        <div class="user-name">Lethean Seourn</div>
-                        <div class="user-email">letheanseourn05@gmail.com</div>
+                        <a href="https://www.facebook.com/le.thean.18/">
+                            <div class="user-name">Lethean Seourn</div>
+                        </a>
+                        <div class="user-email">
+                            <a href="mailto:letheanseourn05@gmail.com" style="color: inherit; text-decoration: none;">
+                                letheanseourn05@gmail.com
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- Profile menu items -->
@@ -132,7 +138,7 @@ const sharedNav = [
 
 const projects = [
     { label: 'Personal', icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z', path: '/personal' },
-   { label: 'Schools', icon: 'M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z M9 22V12h6v10', path: '/schools' },
+    { label: 'Schools', icon: 'M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2 2V9z M9 22V12h6v10', path: '/schools' },
     { label: 'Company', icon: 'M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z', path: '/company' },
 ]
 
@@ -142,10 +148,11 @@ const bottomNav = [
 ]
 
 const profileMenu = [
-    { label: 'About', icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z', path: '/about' },
+    // { label: 'About', icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z', path: '/about' },
     { label: 'Download CV', icon: 'M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z', path: '/cv' },
     { label: 'Hire Me', icon: 'M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z', path: '/hire' },
-    { label: 'Chat', icon: 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z', path: '/chat' },
+    //  { label: 'Chat', icon: 'M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z', path: '/chat' },
+    // 
 ]
 </script>
 
@@ -336,6 +343,13 @@ const profileMenu = [
     text-align: left;
     text-decoration: none;
     position: relative;
+    margin-bottom: 4px;
+    /* Added margin between items */
+}
+
+.nav-item:last-child {
+    margin-bottom: 0;
+    /* Remove margin from last item */
 }
 
 .nav-item.nav-collapsed {
@@ -462,6 +476,13 @@ const profileMenu = [
     color: #374151;
     transition: background 0.2s;
     text-decoration: none;
+    margin-bottom: 4px;
+    /* Added margin between items */
+}
+
+.menu-item:last-child {
+    margin-bottom: 0;
+    /* Remove margin from last item */
 }
 
 .menu-item:hover {

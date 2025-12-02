@@ -3,28 +3,42 @@
     <!-- MY PORTFOLIO text at top left -->
     <div class="portfolio-text-container">
       <h2 class="portfolio-text">
-        <span
-          v-for="(letter, index) in portfolioLetters"
-          :key="index"
-          class="portfolio-letter"
-          :class="{ active: index < portfolioActiveIndex }"
-        >{{ letter }}</span>
+        <span v-for="(letter, index) in portfolioLetters" :key="index" class="portfolio-letter"
+          :class="{ active: index < portfolioActiveIndex }">{{ letter }}</span>
       </h2>
     </div>
 
     <!-- Social Icons -->
     <div class="social-icons">
-      <a href="#" aria-label="Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+      <a href="https://www.instagram.com/lethean.seourn/" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+        </svg>
       </a>
-      <a href="#" aria-label="Behance">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg>
+      <a href="https://github.com/Lethean-2005" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0.297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.931 0-1.31.467-2.38 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.653 1.653.242 2.873.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.628-5.479 5.921.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .32.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+        </svg>
       </a>
-      <a href="#" aria-label="Dribbble">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"/><path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"/><path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"/></svg>
+
+      <a href="https://dribbble.com/le-thean-seourn" aria-label="Dribbble">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94" />
+          <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32" />
+          <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72" />
+        </svg>
       </a>
-      <a href="#" aria-label="Pinterest">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+      <a href="https://www.pinterest.com/letheanseourn/" aria-label="Pinterest">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+        </svg>
       </a>
     </div>
 
@@ -39,17 +53,17 @@
         </h1>
         <!-- Animated FULLSTACK text -->
         <h2 class="outline-text">
-          <span
-            v-for="(letter, index) in designLetters"
-            :key="index"
-            class="design-letter"
-            :class="{ active: index < activeIndex }"
-          >{{ letter }}</span>
+          <span v-for="(letter, index) in designLetters" :key="index" class="design-letter"
+            :class="{ active: index < activeIndex }">{{ letter }}</span>
         </h2>
         <div class="about-link">
           <span>MY PROFILE</span>
           <a href="/profile" class="about-btn" aria-label="About us">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
           </a>
           <div class="dots">
             <span></span><span></span><span></span><span></span><span></span><span></span>
@@ -98,7 +112,7 @@ onMounted(() => {
   intervalId = setInterval(() => {
     activeIndex.value = (activeIndex.value + 1) % (designLetters.length + 1)
   }, 400)
-  
+
   // PORTFOLIO animation
   portfolioIntervalId = setInterval(() => {
     portfolioActiveIndex.value = (portfolioActiveIndex.value + 1) % (portfolioLetters.length + 1)
@@ -115,7 +129,8 @@ onUnmounted(() => {
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap');
 
 .portfolio-container {
-  min-height: 100vh;
+  min-height: 76vh;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -155,13 +170,17 @@ onUnmounted(() => {
 .social-icons {
   position: absolute;
   left: 2rem;
-  top: 8rem; /* Changed to align with Software Developer text */
-  transform: none; /* Removed vertical centering */
+  top: 8rem;
+  /* Changed to align with Software Developer text */
+  transform: none;
+  /* Removed vertical centering */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-right: 1.5rem; /* Added margin to create space between icons and text */
-  margin-top: 8.5rem; /* Slight adjustment to align better with text */
+  margin-right: 1.5rem;
+  /* Added margin to create space between icons and text */
+  margin-top: 8.5rem;
+  /* Slight adjustment to align better with text */
 }
 
 .social-icons a {
@@ -179,7 +198,8 @@ onUnmounted(() => {
   grid-template-columns: 1fr auto 1fr;
   min-height: calc(100vh - 4rem);
   align-items: center;
-  padding-left: 8rem; /* Increased to accommodate icons and margin */
+  padding-left: 8rem;
+  /* Increased to accommodate icons and margin */
 }
 
 /* Left Section */
