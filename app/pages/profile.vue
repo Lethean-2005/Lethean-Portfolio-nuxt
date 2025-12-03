@@ -29,7 +29,7 @@
             </h1>
             <!-- Ghost text for visual effect -->
             <div class="ghost-title" :class="{ 'animate-in': isMounted }">
-              Hallo
+              Hello
             </div>
             
             <!-- Sparkle Icon -->
@@ -253,7 +253,6 @@ onMounted(() => {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-
   font-family: 'Inter', sans-serif;
   color: #000000; /* Changed text color to black */
 }
@@ -266,10 +265,10 @@ onMounted(() => {
   /* background: rgba(255, 255, 255, 0.9); Changed background to light for black text */
   border-radius: 24px;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(40px);
+  /* border: 1px solid rgba(0, 0, 0, 0.08); */
+  /* backdrop-filter: blur(40px); */
   padding: 2rem;
-  box-shadow: 0 0 50px rgba(0,0,0,0.1);
+  /* box-shadow: 0 0 50px rgba(0,0,0,0.1); */
 }
 
 @media (min-width: 768px) {
@@ -373,7 +372,7 @@ onMounted(() => {
   font-family: 'Playfair Display', serif;
   font-size: 5rem;
   line-height: 0.9;
-  color: rgba(139, 69, 19, 0.2); /* Changed to match header color */
+  color: rgba(73, 35, 7, 0.2); /* Changed to match header color */
   z-index: -1;
   filter: blur(1px);
   opacity: 0;
@@ -396,7 +395,7 @@ onMounted(() => {
 
 .intro-text {
   font-size: 0.9rem;
-  color: #000000; /* Changed to black */
+  color: gray; /* Changed to black */
   line-height: 1.6;
   max-width: 28rem;
   opacity: 0;
@@ -456,10 +455,11 @@ onMounted(() => {
   font-weight: 700;
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
+  color: #8B4513; /* Changed to match header color */
 }
 
-.timeline-text { font-size: 0.9rem; color: #333333; } /* Changed to dark gray */
-.timeline-sub { font-size: 0.75rem; color: #555555; margin-top: 0.2rem; } /* Changed to dark gray */
+.timeline-text { font-size: 0.9rem; color: gray; } /* Changed to dark gray */
+.timeline-sub { font-size: 0.75rem; color: gray; margin-top: 0.2rem; } /* Changed to dark gray */
 
 .skills-container { margin-top: 2rem; }
 .subsection-title {
@@ -468,7 +468,7 @@ onMounted(() => {
   margin-bottom: 0.75rem;
   color: #8B4513; /* Changed to match header color */
 }
-.skills-list { font-size: 0.9rem; color: #000000; line-height: 1.6; } /* Changed to black */
+.skills-list { font-size: 0.9rem; color: gray; line-height: 1.6; } /* Changed to black */
 
 /* 
   ---------------------------------------------------------
@@ -516,13 +516,14 @@ onMounted(() => {
   /* Removed animation properties */
 }
 
-.exp-title { font-weight: 700; font-size: 1.2rem; transition: color 0.3s; }
-.exp-desc { font-size: 0.9rem; color: #333333; margin-top: 0.25rem; } /* Changed to dark gray */
+
+.exp-title { font-weight: 700; font-size: 1.2rem; transition: color 0.3s;color: gray; }
+.exp-desc { font-size: 0.9rem; color: gray; margin-top: 0.25rem; } /* Changed to dark gray */
 
 .contact-section { margin-top: auto; padding-top: 2rem; opacity: 0; transition: opacity 0.8s 0.6s; }
 .contact-section.animate-in { opacity: 1; }
 
-.contact-links { display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: #000000; } /* Changed to black */
+.contact-links { display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: gray; } /* Changed to black */
 
 .contact-row {
   display: flex;
@@ -538,6 +539,7 @@ onMounted(() => {
   gap: 1rem;
   margin-top: 2rem;
   align-items: center;
+  color: gray;
 }
 
 .player-bar {
@@ -548,6 +550,7 @@ onMounted(() => {
   align-items: center;
   gap: 0.5rem;
   font-size: 0.75rem;
+  color: white;
 }
 
 /* 

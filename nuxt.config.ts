@@ -9,4 +9,17 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  // Static file serving configuration
+  nitro: {
+    serveStatic: true,
+    prerender: {
+      crawlLinks: false,
+    }
+  },
+  
+  // Additional optimization for static assets
+  experimental: {
+    payloadExtraction: false
+  }
 });

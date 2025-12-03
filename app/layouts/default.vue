@@ -23,7 +23,7 @@ background: url('https://4kwallpapers.com/images/wallpapers/windows-11-stock-off
 padding: 1rem;
 }
 .content {
-background: rgba(255, 255, 255, 0.85);
+background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0d1a14 100%);
 backdrop-filter: blur(20px);
 border-radius: 1rem;
 padding: 1.5rem;
